@@ -1,5 +1,5 @@
 // Pagina merge si fara internet; PDF-urile raman disponibile dupa ce au fost deschise o data.
-const CACHE = 'retete-v9';
+const CACHE = 'retete-v10';
 const CORE = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
