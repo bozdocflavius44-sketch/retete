@@ -1,12 +1,12 @@
 {
-  "name": "Rețete Flavius Bozdoc Thermomix",
-  "short_name": "Rețete",
+  "name": "Flavius Bozdoc Rețete tradiționale Thermomix",
+  "short_name": "Rețete Thermomix",
   "lang": "ro",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f2e9",
-  "theme_color": "#a83f1c",
+  "background_color": "#e9f2e6",
+  "theme_color": "#2b7339",
   "icons": [
     {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
     {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
