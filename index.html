@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Flavius Bozdoc Rețete tradiționale Thermomix</title>
-<meta name="theme-color" content="#2b7339">
+<meta name="theme-color" content="#1c6b2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Rețete">
@@ -12,9 +12,9 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
 <style>
-:root{--bg:#e9f2e6;--panel:#f7fbf4;--ink:#1c2a1f;--muted:#566b5a;--line:#cfdfca;--accent:#2b7339;--accent-ink:#fff;--soft:#d8ead3;--star:#a87c06;--hl:#dcef9f;--shadow:0 1px 2px rgba(20,60,30,.1)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a14;--panel:#19241c;--ink:#e5f0e6;--muted:#97ac9b;--line:#2d3e32;--accent:#6cc27b;--accent-ink:#0c1a10;--soft:#24392a;--star:#eab03a;--hl:#4b6119;--shadow:none}}
-:root[data-theme="dark"]{--bg:#111a14;--panel:#19241c;--ink:#e5f0e6;--muted:#97ac9b;--line:#2d3e32;--accent:#6cc27b;--accent-ink:#0c1a10;--soft:#24392a;--star:#eab03a;--hl:#4b6119;--shadow:none}
+:root{--bg:#d3e8cc;--panel:#ecf7e7;--ink:#14261a;--muted:#46604c;--line:#b3d2aa;--accent:#1c6b2e;--accent-ink:#fff;--soft:#c2e0b8;--star:#8f6a00;--hl:#d9ee8e;--band:#1c6b2e;--shadow:0 1px 2px rgba(20,60,30,.14)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e2115;--panel:#15301e;--ink:#e5f2e6;--muted:#9ab8a0;--line:#2a4c34;--accent:#74cc83;--accent-ink:#0a1a0f;--soft:#1f4229;--star:#eab03a;--hl:#4b6119;--band:#1c6b2e;--shadow:none}}
+:root[data-theme="dark"]{--bg:#0e2115;--panel:#15301e;--ink:#e5f2e6;--muted:#9ab8a0;--line:#2a4c34;--accent:#74cc83;--accent-ink:#0a1a0f;--soft:#1f4229;--star:#eab03a;--hl:#4b6119;--band:#1c6b2e;--shadow:none}
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
@@ -196,6 +196,29 @@ html,body{overflow:hidden;overscroll-behavior:none}
  .list{flex:none;overflow:visible}
  .hint{display:none}
  .search{margin-bottom:8px}
+}
+/* banda verde de sus */
+.head{background:var(--band);color:#fff;border-bottom:0}
+.head .n{color:#dcf2dc}
+.head .hint{color:#dcf2dc}
+.head .hint code{background:rgba(255,255,255,.2)}
+.head .iconbtn,.head .chip,.head .langsel{background:transparent;border-color:rgba(255,255,255,.6);color:#fff}
+.head .iconbtn:hover,.head .chip:hover{background:rgba(255,255,255,.16)}
+.head option{color:#14261a;background:#fff}
+.head .chip[aria-pressed="true"]{background:#fff;border-color:#fff;color:var(--band)}
+.head .badge{background:#fff;color:var(--band)}
+.head .search input,.head .filters select{background:#fff;border-color:#fff;color:#14261a}
+.head .search input::placeholder{color:#4d6452}
+.head .search input:focus{border-color:#b9e6b9}
+.head .search svg,.head .search .clear{color:#46604c}
+.head :focus-visible{outline-color:#fff}
+.dh{background:var(--band);color:#fff;border-bottom:0}
+.dh .iconbtn{border-color:rgba(255,255,255,.6);color:#fff;background:transparent}
+@media (min-width:901px){.main{border-top:14px solid var(--band)}}
+@media (max-width:900px){
+ .main{overflow-x:hidden}
+ .rec{padding-top:0}
+ .rec .back,.rec .back:hover{display:flex;position:sticky;top:0;z-index:5;width:100vw;margin:0 0 14px calc(50% - 50vw);padding:calc(12px + env(safe-area-inset-top)) 16px 12px;border:0;border-radius:0;background:var(--band);color:#fff;font-weight:600}
 }
 @media (prefers-reduced-motion:reduce){.drawer,.toast{transition:none}}
 </style>
